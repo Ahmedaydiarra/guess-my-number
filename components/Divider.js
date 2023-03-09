@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import {  View } from 'react-native'
 import React from 'react'
 
-export default function Divider() {
-  return (
-    <View>
-      <Text>Divider</Text>
+export default function Card(margin, ... otherSpaces) {
+  return 
+    <View style={{ margin, ...otherSpaces}}>;
+      
     </View>
-  )
+  
 }
 
 const styles = StyleSheet.create({})
