@@ -1,10 +1,23 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react';
-import { CustomeButton, heading } from '../components'
+import {card, CustomeButton, heading } from '../components'
+
 
 
 
 export default function StartGameScreen() {
+
+const person = {
+  
+}
+
+
+
+
+
+
+
+
   return (
     <View>
       <heading>Guess My Number</heading>
