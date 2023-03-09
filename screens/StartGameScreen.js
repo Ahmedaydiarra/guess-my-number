@@ -8,9 +8,12 @@ export default function StartGameScreen() {
   return (
     <View>
       <heading>Guess My Number</heading>
-      <CustomeButton>
-        Start
-      </CustomeButton>
+      <card>
+        {/* buttons */}
+        <view style={styles.}>
+
+        </view>
+      </card>
     </View>
   )
 }
