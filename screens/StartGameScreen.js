@@ -27,7 +27,9 @@ const { firstname, lastname, ... other} = preson;
         <TextInput
         style={styles.input}
         placeholder= "?"
+        
         keyboardType='number-pad'
+        maxLength={2}
         />
         <view style={styles.buttonContenair}>
           <CustomeButton>Start</CustomeButton>
