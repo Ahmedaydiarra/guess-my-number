@@ -36,9 +36,7 @@ const styles = StyleSheet.create({
     
   },
 
-  image: {
-    
-  }
+  
 
   ImageBackground: {
     opacity: 0.2,

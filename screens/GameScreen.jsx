@@ -1,11 +1,12 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { CustomeButton, heading } from '../components'
 import Card from '../components/Divider'
 import { rootContext } from '../context/AppContext'
 
 export default function GameScreen() {
-
+    const { onchangeHandler, numberEntered } = 
+    useContext(rootContext);
 
   return (
     <View>
@@ -20,7 +21,6 @@ export default function GameScreen() {
     {/* Input */}
     <view style={styles.inputContenair}>
         <CustomeButton>*</CustomeButton>
-
         <TextInput
         style={styles.input}
         defaultValue="?"
@@ -29,12 +29,14 @@ export default function GameScreen() {
         value={numberEntered}
         maxLength={2}
         />
+        <CustomeButton></CustomeButton> 
+    </view>
+    {/* buttons */}
+    <view style={styles.contenair}>
 
     </view>
 
     </Card>
-
-
 
     </View>
 
@@ -52,8 +54,23 @@ cubeContenar: {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff'
-}
+},
 
+cubeText: {
+    fontSize: 20,
+    textAlign: 'center',
+    fontWeight: 'bold'
+},
+
+inputContenair: {
+    flexDirection: 'row',
+    marginTop: 24
+},
+
+input: {
+    width: 90,
+
+}
 
 
 
